@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Рабочее место",
+        "number": "№1",
+        "isAvailable": true
+    },
+    {
+        "name": "Рабочее место",
+        "number": "№2",
+        "isAvailable": false
+    },
+    {
+        "name": "Рабочее место",
+        "number": "№3",
+        "isAvailable": true
+    },
+    {
+        "name": "Рабочее место",
+        "number": "№4",
+        "isAvailable": true
+    },
+    {
+        "name": "Рабочее место",
+        "number": "№5",
+        "isAvailable": true
+    },
+    {
+        "name": "Рабочее место",
+        "number": "№6",
+        "isAvailable": true
+    }
+]

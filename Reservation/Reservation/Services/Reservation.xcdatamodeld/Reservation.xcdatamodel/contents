@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G14042" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="NumbersPhone" representedClassName="NumbersPhone" syncable="YES" codeGenerationType="class">
+        <attribute name="homeNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="personalNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Users" inverseName="phoneNumbers" inverseEntity="Users" syncable="YES"/>
+    </entity>
+    <entity name="Offices" representedClassName="Offices" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="number" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Pets" representedClassName="Pets" syncable="YES" codeGenerationType="class">
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eye" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="legs" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Users" inverseName="pets" inverseEntity="Users" syncable="YES"/>
+    </entity>
+    <entity name="RoomsData" representedClassName="RoomsData" syncable="YES" codeGenerationType="class">
+        <attribute name="isAvailable" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Users" representedClassName="Users" syncable="YES" codeGenerationType="class">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="yearOfBrith" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="pets" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pets" inverseName="user" inverseEntity="Pets" syncable="YES"/>
+        <relationship name="phoneNumbers" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NumbersPhone" inverseName="user" inverseEntity="NumbersPhone" syncable="YES"/>
+    </entity>
+    <entity name="WorkPlaceData" representedClassName="WorkPlaceData" syncable="YES" codeGenerationType="class">
+        <attribute name="isAvailable" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="number" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="NumbersPhone" positionX="-189" positionY="-54" width="128" height="90"/>
+        <element name="Offices" positionX="-196.26171875" positionY="-189.41796875" width="128" height="75"/>
+        <element name="Pets" positionX="-198" positionY="-63" width="128" height="120"/>
+        <element name="RoomsData" positionX="-324.58984375" positionY="18.46484375" width="128" height="75"/>
+        <element name="Users" positionX="-207" positionY="-72" width="128" height="150"/>
+        <element name="WorkPlaceData" positionX="-81.3125" positionY="3.5078125" width="128" height="90"/>
+    </elements>
+</model>

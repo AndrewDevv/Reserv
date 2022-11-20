@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DbU-zL-xLi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Office Choice Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="OfficeChoiceController" id="BYZ-38-t0r" customClass="OfficeChoiceController" customModule="Reservation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A3D-1y-oJw">
+                                <rect key="frame" x="19" y="159" width="337" height="266"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" red="0.098039215686274508" green="0.74901960784313726" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="FPZ-KV-1z8">
+                                <rect key="frame" x="180" y="284.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="9hN-hV-QgD"/>
+                                    <constraint firstAttribute="height" constant="15" id="uQo-jg-3jM"/>
+                                </constraints>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выбор офиса" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0e-i7-vQN">
+                                <rect key="frame" x="112" y="97" width="151.5" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="x87-1k-Lyy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" red="0.098039215686274508" green="0.74901960784313726" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A3D-1y-oJw" secondAttribute="trailing" constant="19" id="1db-A6-ksj"/>
+                            <constraint firstItem="FPZ-KV-1z8" firstAttribute="centerX" secondItem="A3D-1y-oJw" secondAttribute="centerX" id="6eG-IN-s7T"/>
+                            <constraint firstItem="A3D-1y-oJw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="TsQ-sa-rKP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A3D-1y-oJw" secondAttribute="bottom" constant="242" id="f11-ij-4Mv"/>
+                            <constraint firstItem="A3D-1y-oJw" firstAttribute="top" secondItem="z0e-i7-vQN" secondAttribute="bottom" constant="20" id="gNc-aQ-LNQ"/>
+                            <constraint firstItem="z0e-i7-vQN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="kzC-La-fIy"/>
+                            <constraint firstItem="FPZ-KV-1z8" firstAttribute="centerY" secondItem="A3D-1y-oJw" secondAttribute="centerY" id="o8b-Lh-d06"/>
+                            <constraint firstItem="z0e-i7-vQN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sGL-C0-gWk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HKE-av-Jsg"/>
+                    <connections>
+                        <outlet property="officeChoice" destination="A3D-1y-oJw" id="ASp-yo-bv7"/>
+                        <outlet property="spinner" destination="FPZ-KV-1z8" id="WTc-Oq-6t6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0bJ-Cd-sP0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DbU-zL-xLi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QPz-z9-N7x">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6cV-3R-MoP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hJU-BH-C1u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166" y="134"/>
+        </scene>
+    </scenes>
+</document>

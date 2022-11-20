@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Отдел разработчиков",
+    "is_available": false,
+  },
+  {
+    "name": "Отдел аналитики",
+    "is_available": false,
+  },
+  {
+    "name": "Отдел кадров",
+    "is_available": true,
+  },
+  {
+    "name": "Отдел тестеровщиков",
+    "is_available": true,
+  },
+  {
+    "name": "Отдел дизайна",
+    "is_available": true,
+  }
+]

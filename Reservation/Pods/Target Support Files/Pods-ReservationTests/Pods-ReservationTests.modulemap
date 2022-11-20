@@ -1,0 +1,6 @@
+module Pods_ReservationTests {
+  umbrella header "Pods-ReservationTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

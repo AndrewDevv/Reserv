@@ -1,0 +1,59 @@
+[
+    {
+        "firstName": "Иван",
+        "lastName": "Иванов",
+        "country": "Россия",
+        "city": "Москва",
+        "year_of_brith": 1978,
+        "pet": {
+            "name": "собака",
+            "color": "коричневый",
+            "legs": 4,
+            "eye": 2,
+        },
+        "numbers": [
+            {
+                "personalNumber": 228,
+                "homeNumber": 1488
+            }
+        ]
+    },
+    {
+        "firstName": "Вася",
+        "lastName": "Пупкин",
+        "country": "Россия",
+        "city": "Ульяновск",
+        "year_of_brith": 2001,
+        "pet": {
+            "name": "попугай",
+            "color": "зеленый",
+            "legs": 2,
+            "eye": 2,
+        },
+        "numbers": [
+            {
+                "personalNumber": 228,
+                "homeNumber": 1488
+            }
+        ]
+    },
+    {
+        "firstName": "Александр",
+        "lastName": "Пушкин",
+        "country": "Россия",
+        "city": "Санкт-Петербург",
+        "year_of_brith": 1799,
+        "pet": {
+            "name": "кот",
+            "color": "белый",
+            "legs": 4,
+            "eye": 1,
+        },
+        "numbers": [
+            {
+                "personalNumber": 228,
+                "homeNumber": 1488
+            }
+        ]
+    }
+]
